@@ -35,7 +35,7 @@ def check_token(token: str, username: str):
        return data
 
   except RuntimeError as e:
-    return None
+    return
 
 def decode_token(token: str):
   try:
@@ -44,7 +44,7 @@ def decode_token(token: str):
     data = Payload(**data)
     return data
   except RuntimeError as e:
-    return None
+    return
 
 def create_token(username: str):
   payload = msgpack.packb({'username': username})

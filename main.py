@@ -69,7 +69,7 @@ async def get_current_user(token: str = Depends(oauth2_scheme),
   payload = decode_token(token)
 
   if not payload:
-    return None
+    return
 
   db_user = crud.get_user(db, username = payload.username)
 
