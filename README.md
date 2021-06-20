@@ -34,4 +34,4 @@ The database should automatically be created when the app is ran.
 * Password hashing: Bcrypt for server-side password hashing
 * Authentication: Branca token via *Authorization* header
 * Request/Response format: JSON or Msgpack
-* Type validation using Pydantic
+* Type/data validation using Pydantic
