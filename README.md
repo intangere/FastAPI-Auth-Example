@@ -24,7 +24,7 @@ BRANCA_TTL = 3600 #How long do you want the user to stay logged in for
 ```
 Then from the parent directory you can run the app with something like:
 ```
-uvicorn app:app --host "0.0.0.0" --port 8080
+uvicorn Auth_Example.main:app --host "0.0.0.0" --port 8080
 ```
 
 The database should automatically be created when the app is ran.
